@@ -1,0 +1,354 @@
+{
+	"info": {
+		"_postman_id": "6f7543d9-e20e-4609-8c88-15bb9b6b10eb",
+		"name": "mobile",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "get expensebyid",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer 1517eeb789fad171cfdd32d7d80c29a90fddd2177f13271556abbdfd46128d40a526d4aff60203d80bca7acd31d33b88d2c7888e1aa711c5210ade070f7fcce1",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"date\": \"09/09/2021\",\n\t\"category\": \"Developer\",\n\t\"price\": \"12345\",\n\t\"notes\": \"this is the rest result\",\n\t\"createdby\": \"Mr. GOTech CTO\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost/adrominds/v1/getexpensebyid/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"adrominds",
+						"v1",
+						"getexpensebyid",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get activity by id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/adrominds/v1/getactivitybyid/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"adrominds",
+						"v1",
+						"getactivitybyid",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getallexpenses",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer 1517eeb789fad171cfdd32d7d80c29a90fddd2177f13271556abbdfd46128d40a526d4aff60203d80bca7acd31d33b88d2c7888e1aa711c5210ade070f7fcce1",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"date\": \"09/09/2021\",\n\t\"category\": \"Developer\",\n\t\"price\": \"12345\",\n\t\"notes\": \"this is the rest result\",\n\t\"createdby\": \"Mr. GOTech CTO\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost/adrominds/v1/getallexpenses",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"adrominds",
+						"v1",
+						"getallexpenses"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "addexpense",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer 1517eeb789fad171cfdd32d7d80c29a90fddd2177f13271556abbdfd46128d40a526d4aff60203d80bca7acd31d33b88d2c7888e1aa711c5210ade070f7fcce1",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"date\": \"09/09/2021\",\n\t\"category\": \"Developer\",\n\t\"price\": \"12345\",\n\t\"notes\": \"this is the rest result\",\n\t\"createdby\": \"Mr. GOTech CTO\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost/adrominds/v1/addexpense",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"adrominds",
+						"v1",
+						"addexpense"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getallactivities",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/adrominds/v1/getallactivities",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"adrominds",
+						"v1",
+						"getallactivities"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getprofile/2",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/adrominds/v1/getprofile/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"adrominds",
+						"v1",
+						"getprofile",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "addaccount",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"email\":\"abc1@gmail.com\",\r\n\t\"password\": \"abc1\",\r\n\t\"companyname\": \"gotech\",\r\n\t\"name\": \"Gopi\",\r\n    \"mobile\": 123456123\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost/adrominds/v1/addaccount",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"adrominds",
+						"v1",
+						"addaccount"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"email\":\"abc@gmail.com\",\r\n\t\"password\": \"abc\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost/adrominds/v1/login",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"adrominds",
+						"v1",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updateprofile",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer 1517eeb789fad171cfdd32d7d80c29a90fddd2177f13271556abbdfd46128d40a526d4aff60203d80bca7acd31d33b88d2c7888e1aa711c5210ade070f7fcce1",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"email\": \"abc1@gmail.com\",\n\t\"name\": \"Gopi\",\n\t\"company\": \"gotecg\",\n\t\"mobile\": \"profileData.Mobile\",\n\t\"address\": \"profileData.Address\",\n\t\"gst\": \"profileData.GST\",\n    \"landline\":\"12312\",\n    \"accountnumber\": \"1231231\",\n    \"website\":\"gotech.com\",\n    \"branchname\":\"thiruvallur\",\n    \"bankname\": \"gotech bank\",\n    \"ifsc\": \"UTIB2343234\",\n    \"id\": 2\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/adrominds/v1/updateprofile",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"adrominds",
+						"v1",
+						"updateprofile"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updateactivities",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"date\": \"09/09/2021\",\r\n\t\"type\": \"type\",\r\n\t\"category\": \"category\",\r\n\t\"model\": \"model\",\r\n\t\"imei\": \"imei\",\r\n\t\"storage\": \"storage\",\r\n    \"ram\":\"ram\",\r\n    \"color\": \"color\",\r\n    \"phone\":\"phone\",\r\n    \"client\":\"client\",\r\n    \"modifiedby\": \"modified\",\r\n    \"notes\": \"notes\",\r\n    \"id\":1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "updateactivities",
+					"host": [
+						"updateactivities"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "addactivities",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"date\": \"09/09/2021\",\r\n\t\"type\": \"type\",\r\n\t\"category\": \"category\",\r\n\t\"model\": \"model\",\r\n\t\"imei\": \"imei\",\r\n\t\"storage\": \"storage\",\r\n    \"ram\":\"ram\",\r\n    \"color\": \"color\",\r\n    \"phone\":\"phone\",\r\n    \"price\": \"234232\",\r\n    \"client\":\"client\",\r\n    \"addedby\": \"modified\",\r\n    \"notes\": \"notes\",\r\n    \"id\":1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost/adrominds/v1/addactivities",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"adrominds",
+						"v1",
+						"addactivities"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "dashboard",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"from\": \"01/09/2021\",\r\n\t\"to\": \"30/09/2021\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost/adrominds/v1/dashboard",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"adrominds",
+						"v1",
+						"dashboard"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

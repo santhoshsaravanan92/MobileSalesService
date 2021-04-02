@@ -1,0 +1,20 @@
+php_flag display_errors on
+
+RewriteEngine on
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+
+RewriteRule ^addaccount$ controller/AddAccount.php [L]
+RewriteRule ^login$ controller/Login.php [L]
+RewriteRule ^updateprofile$ controller/UpdateAccount.php [L]
+RewriteRule ^getprofile/([0-9]+)$ controller/GetProfile.php?id=$1 [L]
+RewriteRule ^addactivities$ controller/AddActivities.php [L]
+RewriteRule ^updateactivities$ controller/UpdateActivities.php [L]
+RewriteRule ^getallactivities$ controller/GetAllActivities.php [L]
+RewriteRule ^deleteactivity/([0-9]+)$ controller/DeleteActivity.php?id=$1 [L]
+RewriteRule ^getactivitybyid/([0-9]+)$ controller/GetAActivity.php?id=$1 [L]
+RewriteRule ^addexpense$ controller/AddExpense.php [L]
+RewriteRule ^getallexpenses$ controller/GetAllExpenses.php [L]
+RewriteRule ^getexpensebyid/([0-9]+)$ controller/GetAnExpense.php?id=$1 [L]
+RewriteRule ^deleteexpense/([0-9]+)$ controller/DeleteExpense.php?id=$1 [L]
+RewriteRule ^dashboard$ controller/Dashboard.php [L]
